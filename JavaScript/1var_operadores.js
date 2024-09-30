@@ -82,7 +82,7 @@ console.log("variable ** 5 es igual a", i);
 x = 10;
 y = 20;
 var ans = 2*(x+y);
-console.log("El dobre de la suma de las dos variables es:", ans);
+console.log("El doble de la suma de las dos variables es:", ans);
 
 //Ejercicio 2
 ans = 11;
