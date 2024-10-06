@@ -24,3 +24,14 @@ console.log(`types: ${typeof(obs['number'])}, ${typeof(num_obj)}`)
 var objs = new Date()
 console.log(objs);
 console.log(objs.getFullYear());
+
+
+//Arreglos
+var arr1 = new Array(1,2,"Hola");
+var arr2 = ["Hola",2,1];
+console.log("Arr1:", arr1);
+console.log("Arr2", arr2);
+console.log(`Typo de array: ${typeof(arr1)} and arr2: ${arr2}`);
+arr2.sort();
+console.log("sorted arr2:",arr2);
+console.log("lenght of arr2:",arr2.length);
