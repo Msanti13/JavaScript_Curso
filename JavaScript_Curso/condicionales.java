@@ -41,11 +41,24 @@ public class condicionales {
                 break;
         }
 
-        //bucles
+        //bucles while, cuando es false no se ejecuta
         var sudo = 0;
-        while (sudo < 10) {
-            System.out.println("El valor de sudo es: " + sudo);
+        while (sudo < 5) {
+            System.out.println("El valor de sudo usando while es: " + sudo);
             sudo++;
+        }
+
+        //bucle do while se ejecuta al menos una vez
+        var sudo2 = 0;
+        do{
+            System.out.println("El valor de sudo2 usando do while es: " + sudo2);
+            sudo2++;}
+        while(sudo2 > 10);
+
+        //bucle for
+        for (int i = 0; i < 5; i++) //concentra todo en una sola linea
+        {
+            System.out.println("El valor de i usando for es: " + i);
         }
       
     }
