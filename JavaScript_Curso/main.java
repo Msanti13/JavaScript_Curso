@@ -1,4 +1,3 @@
-
 public class main {
     public static void main(String[] args) {
         byte b = 127;
@@ -33,7 +32,7 @@ public class main {
         System.out.println("Igual o no: "+ (x==y));
         System.out.println("Diferente o no: "+ (x!=y));
 
-
     }
+       
     
 }   
