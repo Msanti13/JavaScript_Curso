@@ -15,3 +15,18 @@ console.log(arr5);
 //Dado que las matrices son objetos, son mutables. Por definición, sus valores se actualizan en asignaciones.
 arr2[2] = "Adios";
 console.log("Mutación de matrices:", arr2);
+
+//crear una copia de una matriz
+var arracopy = arr2.slice();
+var arracopy1 = Array.from(arr2);
+var arracopy2 = [...arr2];
+console.log("Copia de una matriz con slice:", arracopy);
+console.log("Copia de una matriz con Array.from:", arracopy1);
+console.log("Copia de una matriz con spread operator:", arracopy2);
+
+
+//Medotos y propiedades de las matrices
+//length
+console.log("Popiedad length:");
+console.log("Propiedad length:", arr2.length);
+console.log("Propiedad length:", arr3.length);
