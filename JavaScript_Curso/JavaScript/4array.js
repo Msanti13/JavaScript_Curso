@@ -78,4 +78,43 @@ console.log("Metodo toString():", arr13, typeof arr13); //1,2,3 convierte una ma
 
 
 
+//MATRICES MULTIDIMENCIONALES
+console.log("MATRICES MULTIDIMENCIONALES:");
+var arr14 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.log("MATRICES MULTIDIMENCIONALES:", arr14);
 
+//Accediendo a elementos de una matriz multidimensional
+console.log("Accediendo a elementos de una matriz multidimensional:");
+var arr15 = arr14[1][2];
+console.log("Accediendo a elementos de una matriz multidimensional:", arr15); //6
+
+//Ejericio
+console.log("Ejericio:");
+var matrix = [[200, 50, 300, 5],
+                [10, 25, 7, 100],
+                [25, 20, 70, 45],
+                [500, 170, 11, 35]];
+
+    var rom = 1;
+    var col = 0;
+    var s = 2;
+    var ans = null;
+
+    if(matrix.length <= rom || rom < 0 ){
+        ans = undefined;
+    }
+    else if(matrix[rom].length <= s || matrix[rom].length <= col){
+        ans = undefined;
+    }
+    else if (s<0 || col<0){
+        ans = undefined;
+    }
+    else if(col > s){
+        ans = undefined;
+    }
+
+    else{
+        ans = matrix[rom].slice(col, s+1);
+    }
+
+    console.log("El resultado de la operacion es:", ans);
