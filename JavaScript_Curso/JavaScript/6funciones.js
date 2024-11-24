@@ -96,9 +96,45 @@ console.log(filt); //[ 40, 50 ]
 console.log(res2); //[ 40, 50 ] 
 
 
-
-
-
 var arr1 = [10, 8, 33, 40, 51];
 var result = arr1.filter((val) => val > 30);
 console.log(result); //[ 33, 40, 51 ]
+
+//metodo find
+var arr2 = [10, 8, 33, 40, 51];
+var result1 = arr2.find((val) => val > 30);
+console.log(result1); //33
+
+//metodo map
+var arr3 = [10, 20, 30, 40, 50];
+var result2 = arr3.map((val) => val * 2);
+console.log("metodo map");
+console.log("Metodo original:", arr3)
+console.log("Metodo con map: ", result2); //[ 20, 40, 60, 80, 100 ]
+
+//metodo reduce
+
+var arr4 = [100, 200, 300, 400, 500];
+var result3 = arr4.reduce((acc, val) => acc + val);
+console.log("metodo reduce:" , result3); //1500
+console.log("Metodo original:", arr4)
+
+
+//task
+/*crear una función que primero genere un tablero (arreglo bidimensional)
+ y luego rellene ese tablero con valores usando un array de piezas, 
+ donde cada pieza es un objeto con coordenadas de tablero y el valor de la pieza dentro del tablero*/
+var generate = function (length, width, pieces) {
+    var board = [];
+    for (var i = 0; i < length; i++) {
+        board[i] = [];
+        for (var j = 0; j < width; j++) {
+            board[i][j] = null;
+        }
+    }
+    pieces.forEach(function (piece) {
+        board[piece.x][piece.y] = piece.value;
+    });
+    return board;
+}
+  
