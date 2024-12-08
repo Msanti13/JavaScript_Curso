@@ -6,7 +6,7 @@ var  var2 = 10;
 var  var3 = 15;
 console.log("Variables original:");
 console.log("var1:"+var1, " var2:" + var2, "var3:" +var3);
-var temp = var1;
+var temp = var1; //Variable temporal para intercambiar valores
 var1 = var3;
 var3 = var2;
 var2 = temp;
@@ -59,7 +59,7 @@ var h = 20;
 console.log("Operadores logicos:");
 console.log("5 es menor a 10 y 15 es mayor a 20?", e < f && g > h);
 console.log("5 es menor a 10 o 15 es mayor a 20?", e < f || g > h);
-console.log("5 es menor a 10?", e < f && ! g > h);
+console.log("5 es menor a 10?", e < f && ! g > h); //Negacion de la segunda condicion con el signo de admiracion (!) 
 
 //Operadores de asignacion
 var i = 5;
