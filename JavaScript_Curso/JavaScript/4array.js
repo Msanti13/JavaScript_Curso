@@ -44,13 +44,13 @@ console.log("Propiedad prototype:", arr6);
 //Metodo push()
 console.log("Metodo push():");
 var arr7 = [1, 2, 3];
-arr7.push(4);
+arr7.push(4); //1,2,3,4 añade un elemento al final de la array.
 console.log("Metodo push():", arr7);
 
 //Metodo pop()
 console.log("Metodo pop():");
 var arr8 = [1, 2, 3];
-arr8.pop();
+arr8.pop(); //1,2 elimina el último elemento de la array.
 console.log("Metodo pop():", arr8); //1,2 elimina el último elemento de la array y lo devuelve a ser asignado a una variable.
 
 //Metodo shift()
@@ -118,3 +118,5 @@ var matrix = [[200, 50, 300, 5],
     }
 
     console.log("El resultado de la operacion es:", ans);
+
+    

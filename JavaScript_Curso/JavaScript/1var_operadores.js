@@ -72,7 +72,7 @@ i *= 2;
 console.log("variable * 5 es igual a", i);
 i /= 2;
 console.log("variable / 5 es igual a", i);
-i %= 2;
+i %= 2; 
 console.log("variable % 5 es igual a", i);
 i **= 2;
 console.log("variable ** 5 es igual a", i);
