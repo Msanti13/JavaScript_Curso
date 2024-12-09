@@ -68,7 +68,21 @@ var arr2 = arr1.slice()
 console.log("array copia del array 1:", arr2);
 console.log("porpiedad", arr2.length) //resultado 12 porque se copio el arreglo 1
 
+
 var array = [[1,2,3],[4,5,6],[7,8,9]] //arreglo multidimensional
-console.log("arreglo multidimensional:", array)
+console.log("arreglo multidimensional:", array); 
 console.log ("longitud", array.length) //longitud del arreglo
 
+console.log(Math.max(s,t,u))
+
+function vocal(str){
+    var vocales = "aeiou"
+    var count = 0
+    for (var i = 0; i<str.length; i++){ //recorrer la cadena
+        if (vocales.includes(str[i])){ //verificar si la cadena contiene vocales
+            count++ //contar las vocales
+        }
+    }
+    return count
+}
+console.log(vocal("hola mundo"))
