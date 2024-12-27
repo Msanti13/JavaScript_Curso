@@ -86,3 +86,5 @@ function vocal(str){
     return count
 }
 console.log(vocal("hola mundo"))
+
+
