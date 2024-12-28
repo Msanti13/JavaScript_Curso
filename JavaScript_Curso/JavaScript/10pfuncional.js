@@ -44,3 +44,36 @@ function composicion(f, g) { //funcion que recibe dos funciones
 var dobleTriple = composicion(doble, triple); //composicion de las dos funciones
 console.log("composicion de funciones:", dobleTriple(5)); //30
 
+//Ejemplo de composición de funciones con funciones de flecha
+var doble1 = x => x * 2;
+var triple1 = x => x * 3;
+
+var composicion1 = (f, g) => x => f(g(x));
+var dobleTriple1 = composicion1(doble1, triple1);
+console.log("composicion de funciones con funciones de flecha:", dobleTriple1(5)); //30
+
+
+//recrusividad
+//La recursividad es una técnica de programación en la que una función se llama a sí misma para resolver un problema.
+//Ejemplo de recursividad
+function factorial(n) { 
+    if (n === 0) { 
+        return 1;
+    } else {
+        return n * factorial(n - 1); //llamada recursiva a la función factorial 
+    }
+}
+console.log("recursividad:", factorial(5)); //120
+
+//Ejemplo de recursividad con funciones de flecha
+var factorial1 = n => n === 0 ? 1 : n * factorial1(n - 1);
+console.log("recursividad con funciones de flecha:", factorial1(5)); //120
+
+//Ejemplos
+//Funcion que suma dos numeros y luego multiplica el resultado por un tercer numero
+const pre = a => a + 2;
+const mult = a => a * 3;
+
+const res = pre(mult(5));
+
+console.log("resultado de la funcion:", res );
